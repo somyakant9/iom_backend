@@ -1,3 +1,14 @@
-{
-    
-}
+[
+    {
+        "name":"GutSens",
+        "price": 15000,
+        "image": "https://res.cloudinary.com/dehmqqwem/image/upload/v1737138745/GutSens_r6yr8t.png",
+        "descriptions" :"Identification of your gut bacteria, with a focus on those impacting sleep, energy & stress."
+    },
+    {
+        "name":"Gut360",
+        "'price":12500,
+        "image": "https://res.cloudinary.com/dehmqqwem/image/upload/v1737138724/Gut360_nubd0m.png",
+        "descriptions" :"Know the impact on 6 wellness domains including Digestion, Metabolism, Heart, Respiratory, Emotional Health and Vitamin Synthesis."
+    }
+]

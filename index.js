@@ -3,7 +3,10 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
 const authRoutes = require("./routes/authRoutes");
+const cartRoutes = require("./routes/cartRoutes");
+const productRoutes = require("./routes/productRoutes");
 const protect = require("./middlewares/protect");
+
 const app = express();
 
 const DB = process.env.DATABASE.replace(
@@ -20,8 +23,9 @@ app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
-app.use("/api/auth", authRoutes);
-app.use("/api/products", protect);
+app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/cart', protect, cartRoutes);
 
 // MongoDB Connectiona
 mongoose
