@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
 });
 // API to save cart items
 router.post("/", async (req, res) => {
-  const items = req.body;
+  const {items} = req.body;
   const userId = req.user.id;
 console.log(items);
   if (!items) {
